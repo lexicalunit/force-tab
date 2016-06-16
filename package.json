@@ -1,0 +1,24 @@
+{
+  "name": "force-tab",
+  "main": "./lib/force-tab",
+  "version": "0.0.0",
+  "description": "Force insert tab or spaces.",
+  "repository": "https://github.com/lexicalunit/force-tab",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.194.0 <2.0.0"
+  },
+  "dependencies": {},
+  "activationCommands": {
+    "atom-workspace": [
+      "force-tab:insert"
+    ]
+  },
+  "keywords": [
+    "indent",
+    "insert",
+    "productivity",
+    "tabs",
+    "text"
+  ]
+}
