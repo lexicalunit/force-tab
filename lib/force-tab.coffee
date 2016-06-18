@@ -10,6 +10,7 @@ module.exports =
     @subscriptions = new CompositeDisposable
     @subscriptions.add atom.commands.add 'atom-workspace',
       'force-tab:insert': => @forceTabInsert()
+      'force-tab:insert-actual-tab': => @forceTabInsertActualTab()
 
   deactivate: ->
     @subscriptions?.dispose()
@@ -24,3 +25,8 @@ module.exports =
         editor.insertText(Array(spacesCount).join(' '))
       else
         editor.insertText '\t'
+
+  forceTabInsertActualTab: ->
+    editor = atom.workspace.getActiveTextEditor()
+    if editor?
+      editor.insertText '\t'

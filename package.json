@@ -11,7 +11,8 @@
   "dependencies": {},
   "activationCommands": {
     "atom-workspace": [
-      "force-tab:insert"
+      "force-tab:insert",
+      "force-tab:insert-actual-tab"
     ]
   },
   "keywords": [

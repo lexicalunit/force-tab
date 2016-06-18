@@ -6,7 +6,15 @@
 [![][dl-badge]][apm-pkg-link]
 [![][mit-badge]][mit]
 
-This is a _very_ simple [Atom](http://atom.io/) plugin to add a command, `force-tab:insert`, which forcibly inserts a tab or an equivalent number of spaces into the editor. This prevents things like code indenting or code snippets from hijacking your ability to insert a tab character. Disabling `force-tab.honorSoftTabs` allows this command to **always** insert an actual tab character instead of spaces, even when you have soft tabs enabled.
+I don't know about y'all, but sometimes I just want to insert a tab character and I don't want Atom to argue with me about it! :angry:
+
+Sometimes I'll try to insert a tab and get snippets inserting a bunch of stuff I don't want, or autocomplete will try to autocomplete something I don't want, or soft tabs is enabled and I literally **can't** insert an actual tab character without temporarily disabling the setting — which is super annoying!
+
+Enter :boom: [`force-tab`](https://atom.io/packages/force-tab)! :boom:
+
+By default Atom outdents code when you press `shift-tab`, but I absolutely never use that! I always use `cmd-[`, with `cmd-]` for indenting. If you're like me, and sometimes you just want to insert a damn tab character, I've made `shift-tab` map to a new command that forcibly inserts a tab or an appropriate number of spaces if `editor.softTabs` is enabled.
+
+Settings for the package include an option to totally disable honoring `editor.softTabs`. There's also another command, `force-tab:insert-actual-tab`, that _never_ honors soft tab settings.
 
 ---
 
