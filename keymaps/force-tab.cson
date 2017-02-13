@@ -1,4 +1,4 @@
 'atom-text-editor:not([mini])':
   'shift-tab': 'unset!'
-'atom-text-editor:not([mini])':
+'atom-text-editor':
   'shift-tab': 'force-tab:insert'
