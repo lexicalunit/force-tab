@@ -1,7 +1,7 @@
 {
   "name": "force-tab",
   "main": "./lib/force-tab",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Force insert tab or spaces.",
   "repository": "https://github.com/lexicalunit/force-tab",
   "license": "MIT",
